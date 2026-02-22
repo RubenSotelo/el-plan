@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://bgf8dd8wllq0w"]
+
+[ext_resource type="Texture2D" uid="uid://s5l7skhlcccw" path="res://Assets/FondoInicio.jpg" id="1_5pnbj"]
+[ext_resource type="Texture2D" uid="uid://cfi8jrwhgdnbx" path="res://Assets/btn_iniciar.png" id="2_sb8e6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6pwck"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_38qkk"]
+
+[node name="Inicio" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_5pnbj")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -61.0
+offset_top = -29.0
+offset_right = 61.0
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.47058824, 0.047058824, 1)
+text = "HEIST PLANNER"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6pwck")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_38qkk")
+icon = ExtResource("2_sb8e6")
+expand_icon = true

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dnwkolwje355h"]
+
+[node name="Planeacion" type="Node2D"]
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="Interactables" type="Node2D" parent="World"]
+
+[node name="Doors" type="Node2D" parent="World"]
+
+[node name="Walls" type="Node2D" parent="World"]
+
+[node name="CrewLayer" type="Node2D" parent="."]
+
+[node name="SpawnEntrance" type="Marker2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
