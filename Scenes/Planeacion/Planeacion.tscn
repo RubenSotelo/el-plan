@@ -1,10 +1,21 @@
-[gd_scene format=3 uid="uid://dnwkolwje355h"]
+[gd_scene load_steps=3 format=3 uid="uid://dnwkolwje355h"]
+
+[ext_resource type="Texture2D" uid="uid://cfmj5b5d8ox3y" path="res://Assets/FondoPlaneacion.jpg" id="1_6l31f"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_6l31f"]
+vertices = PackedVector2Array(318.14063, 124, 319.1172, 54.71875, 321.04688, 72, 325.7422, 124, 415.0703, 71.671875, 413.10938, 53, 439.95313, 53, 439.03906, 250.86719, 378, 250.11719, 378, 124, 381, 105, 341, 72, 341, 105, 332.78125, 124, -39, 102.14844, 39.953125, -103, 41.046875, 105, -39, 117.99219, -15, -118, -39, -50, -38.78125, -71, -39.78125, -118, 226.84375, 189, 227.84375, 253, 185.85156, 253, 184.84375, 189, -15, -138.95313, 222.97656, -138, 213, -121, 487, -255, 487, -19.03125, 254, -19.960938, 254, -121, 256, -138, 213, -103, -99, 87, -188.85156, 223, -193, 87, -193, 19, -97.921875, -50, -78, 87, -78, 102.6875, 87, 105, 87, 89, 111.75781, 89, 144, 151, 89, 122, 113.75781, 74, 144, 74, 342, 143.27344, 342, 189, 314.09375, 151, 100, 189, 100, 251, 89, 251, 44, 122, 44, 253, -39, 253, -78, 118.02344, -78, 223, -112, -216.04688, -112, -186, -418.89844, -186, -458.84375, -217.9375, -452.14844, 223, -420.10938, -71, -323.5078, 223, -365.4297, 87, 256, -255, -362.59375, 19, -188.96875, 270, -323.09375, 270, 381, 72.703125)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6, 7), PackedInt32Array(4, 7, 8, 9, 10), PackedInt32Array(3, 2, 11, 12, 13), PackedInt32Array(14, 15, 16, 17), PackedInt32Array(18, 15, 14, 19, 20), PackedInt32Array(20, 21, 18), PackedInt32Array(22, 23, 24, 25), PackedInt32Array(18, 26, 27, 28, 15), PackedInt32Array(29, 30, 31, 32, 33), PackedInt32Array(28, 34, 15), PackedInt32Array(35, 36, 37, 38, 39), PackedInt32Array(35, 40, 41), PackedInt32Array(42, 43, 44, 45, 46), PackedInt32Array(47, 48, 45, 44), PackedInt32Array(49, 50, 22, 51), PackedInt32Array(52, 53, 54, 46), PackedInt32Array(55, 56, 57, 17, 16), PackedInt32Array(58, 59, 36, 35), PackedInt32Array(60, 61, 62, 63), PackedInt32Array(64, 63, 62, 65), PackedInt32Array(66, 64, 65, 67), PackedInt32Array(33, 68, 29), PackedInt32Array(27, 33, 32, 28), PackedInt32Array(65, 20, 19, 39), PackedInt32Array(65, 39, 38, 69), PackedInt32Array(36, 70, 71, 66, 37), PackedInt32Array(10, 72, 4), PackedInt32Array(12, 10, 9, 13), PackedInt32Array(25, 52, 46, 45), PackedInt32Array(51, 3, 13, 49), PackedInt32Array(45, 51, 22, 25), PackedInt32Array(42, 46, 55, 16), PackedInt32Array(41, 14, 17, 58), PackedInt32Array(35, 41, 58), PackedInt32Array(67, 37, 66), PackedInt32Array(65, 69, 67)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-102, -226, -469, -228, -462, 233, -333.42392, 233, -333, 280, -179, 280, -178.87848, 233, -68, 233, -68.00003, 128.00496, -27, 128, -27, 92, -68.00003, 92.550415, -68, 77, -355, 77, -353, 29, -203, 29, -203, 87, -89, 87, -88, -40, -49, -40, -49, 263, 54, 263, 54, 132, 79, 132, 79, 261, 110, 261, 110, 199, 175, 199, 176, 263, 238, 263, 237, 199, 352, 199, 352, 141, 341, 118, 317, 119, 307.5111, 141, 154, 141, 154, 64, 309, 64, 308, 134, 368, 134, 368, 260, 449, 261, 450, 43, 402, 43, 404, 62, 371, 63, 371, 95, 351, 95, 351, 62, 330, 62, 328, 44, 150, 44, 151, 64, 105, 64, 103, 79, 77, 79, 77, 95, 51, 95, 50, -93, 223, -93, 223, -111, 244, -111, 244, -10, 497, -9, 497, -265, 246, -265, 246, -148, 223, -148, -25, -149, -25, -128, -50, -128, -49, -81, -89, -81, -410, -81, -409, -176, -102, -176)])
 
 [node name="Planeacion" type="Node2D"]
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_6l31f")
 
 [node name="World" type="Node2D" parent="."]
+
+[node name="Background" type="Sprite2D" parent="World"]
+texture = ExtResource("1_6l31f")
 
 [node name="Interactables" type="Node2D" parent="World"]
 
